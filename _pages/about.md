@@ -7,8 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-# Mustafa Umut KAZANCIOĞLU
-
 ## Contact Information
 - **Address**: Sabanci University, Istanbul/TURKEY
 - **Email**: first.last@sabanciuniv.edu
