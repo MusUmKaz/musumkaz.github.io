@@ -15,10 +15,12 @@ main:
     url: /talks/    
 
   - title: "Teaching"
-    url: /teaching/    
+    url: /teaching/
+
+  - title: "CV"
+    url: /files/CV.pdf
     
 #  - title: "CV"
 #    url: /cv/
     
-   - title: "CV"
-     url: /files/CV.pdf
+   
