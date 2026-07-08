@@ -26,11 +26,12 @@ author:
   avatar           : "profile.png"
   name             : "Mustafa Umut Kazancıoğlu"
   pronouns         : # example: "he/him"  
-  bio              : "Ph.D. Student at University of Groningen & Sabancı University"
-  location         : "Istanbul/Türkiye"
+  bio              : "Ph.D. Candidate at University of Groningen & Sabancı University"
+  location         : "Groningen/Netherlands"
   employer         : "University of Groningen & SU"
   uri              : # URL
-  email            : "first.last@sabanciuniv.edu" 
+  email            : "m.u.kazancioglu [at] rug [dot] nl"
+  email            : "mustafa.kazancioglu [at] sabanciuniv [dot] edu"
 
   # Academic websites
   academia         : # URL
