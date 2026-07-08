@@ -9,8 +9,8 @@ redirect_from:
 
 ## Contact Information
 - **Address**: Sabanci University, Istanbul/TURKEY
-- **Email**: m.u.last@rug.nl
-- **Email**: first.last@sabanciuniv.edu
+- **Email**: m.u.kazancioglu [at] rug [dot] nl
+- **Email**: mustafa.kazancioglu [at] sabanciuniv [dot] edu
 
 ## Education
 - **Joint Ph.D. in Mathematics**  
