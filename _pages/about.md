@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 ## Contact Information
-- **Address**: Sabanci University, Istanbul/TURKEY
+- **Address**: University of Groningen, Groningen/Netherlands
 - **Email**: m.u.kazancioglu [at] rug [dot] nl
 - **Email**: mustafa.kazancioglu [at] sabanciuniv [dot] edu
 
