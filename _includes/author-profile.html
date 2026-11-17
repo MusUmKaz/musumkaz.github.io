@@ -41,12 +41,6 @@
       {% if author.academia %}
         <li><a href="{{ author.academia }}"><i class="ai ai-academia ai-fw icon-pad-right" aria-hidden="true"></i>Academia</a></li>
       {% endif %}
-      {% if author.arxiv %}
-        <li><a href="{{ author.arxiv }}"><i class="ai ai-arxiv ai-fw icon-pad-right"></i>arXiv</a></li>
-      {% endif %}      
-      {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar ai-fw icon-pad-right"></i>Google Scholar</a></li>
-      {% endif %}
       {% if author.semantic %}
         <li><a href="{{ author.semantic }}"><i class="ai ai-semantic-scholar ai-fw icon-pad-right"></i>Semantic Scholar</a></li>
       {% endif %}
@@ -59,9 +53,6 @@
       {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed ai-fw icon-pad-right"></i>PubMed</a></li>
       {% endif %}                        
-      {% if author.researchgate %}
-        <li><a href="{{ author.researchgate }}"><i class="fab fa-fw fa-researchgate icon-pad-right" aria-hidden="true"></i>ResearchGate</a></li>
-      {% endif %}
       {% if author.scopus %}
         <li><a href="{{ author.scopus }}"><i class="ai ai-scopus ai-fw icon-pad-right"></i>Scopus</a></li>
       {% endif %}
@@ -82,6 +73,31 @@
       {% if author.github %}
         <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
       {% endif %}
+
+      {% assign profile_researchgate = author.researchgate %}
+      {% assign profile_scholar = author.googlescholar %}
+      {% assign profile_arxiv = author.arxiv %}
+      {% if page.author and site.data.authors[page.author] %}
+        {% assign profile_rug = author.rug_publications %}
+      {% else %}
+        {% assign profile_researchgate = "https://www.researchgate.net/profile/Mustafa-Kazancioglu-3/research" %}
+        {% assign profile_scholar = "https://scholar.google.com/citations?user=8BQnHO8AAAAJ&hl=en" %}
+        {% assign profile_rug = "https://research.rug.nl/en/persons/mustafa-kazancioglu/publications/" %}
+        {% assign profile_arxiv = "https://arxiv.org/search/math?searchtype=author&query=Kazanc%C4%B1o%C4%9Flu%2C+M+U" %}
+      {% endif %}
+      {% if profile_researchgate %}
+        <li><a href="{{ profile_researchgate | escape }}"><i class="fab fa-fw fa-researchgate icon-pad-right" aria-hidden="true"></i>ResearchGate</a></li>
+      {% endif %}
+      {% if profile_scholar %}
+        <li><a href="{{ profile_scholar | escape }}"><i class="ai ai-google-scholar ai-fw icon-pad-right" aria-hidden="true"></i>Google Scholar</a></li>
+      {% endif %}
+      {% if profile_rug %}
+        <li><a href="{{ profile_rug | escape }}"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>University of Groningen Publications</a></li>
+      {% endif %}
+      {% if profile_arxiv %}
+        <li><a href="{{ profile_arxiv | escape }}"><i class="ai ai-arxiv ai-fw icon-pad-right" aria-hidden="true"></i>arXiv</a></li>
+      {% endif %}
+
       {% if author.kaggle %}
         <li><a href="https://kaggle.com/{{ author.kaggle }}"><i class="fab fa-fw fa-kaggle icon-pad-right" aria-hidden="true"></i>Kaggle</a></li>
       {% endif %}      
